@@ -1,1 +1,515 @@
+/* ===========================
+   СБРОС И БАЗОВЫЕ СТИЛИ
+   =========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* ===========================
+   HEADER
+   =========================== */
+
+.header {
+  background-color: rgb(230, 126, 34);
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffad64;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  font-weight: 400;
+}
+
+
+/* ===========================
+   СЕКЦИИ
+   =========================== */
+
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.experience-section {
+  background-color: #ecf0f1;
+}
+
+.education-section {
+  background-color: #ffffff;
+}
+
+.contacts-section {
+  background-color: #ecf0f1;
+}
+
+
+/* ===========================
+   О СЕБЕ
+   =========================== */
+
+.about-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-photo {
+  flex: 0 0 300px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid rgb(230, 126, 34);
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-info h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+
+/* ===========================
+   ОПЫТ РАБОТЫ
+   =========================== */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.experience-card {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  color: #e67e22;
+}
+
+.company {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.period {
+  color: rgb(167, 167, 167);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+
+/* ===========================
+   ОБРАЗОВАНИЕ
+   =========================== */
+
+.education-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border-left: 5px solid #e67e22;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education-info {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.education-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.education-icon-wrapper {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.education-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+
+/* ===========================
+   КОНТАКТЫ
+   =========================== */
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-details {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contact-details h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.contact-details a {
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.contact-map {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.footer {
+  background-color: rgb(230, 126, 34);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+/* ===========================
+   КНОПКА «НАПИСАТЬ МНЕ»
+   =========================== */
+
+.btn-open-form {
+  background-color: white;
+  color: #e67e22;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-open-form:hover {
+  background-color: #ffad64;
+  color: white;
+}
+
+/* Вариант кнопки внутри секции контактов */
+.btn-open-form--inline {
+  margin-top: 20px;
+  background-color: #e67e22;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.btn-open-form--inline:hover {
+  background-color: #d35400;
+}
+
+
+/* ===========================
+   ПРЕЛОАДЕР
+   =========================== */
+
+/* Занимает весь экран поверх содержимого */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* выше всего остального */
+}
+
+
+
+/* Класс добавляется через JS после загрузки страницы */
+#preloader.hide-preloader {
+  display: none; /* прелоадер пропадает с дисплея */
+}
+
+
+/* ===========================
+   МОДАЛЬНЫЙ ОВЕРЛЕЙ
+   =========================== */
+
+/* Фоновая затемнённая подложка */
+#modal-overlay {
+  display: none; /* скрыт по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Когда JS добавляет класс show-modal — показываем через flex */
+#modal-overlay.show-modal {
+  display: flex;
+}
+
+/* Само окно формы */
+.modal-window {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #000;
+  text-align: center;
+}
+
+/* Крестик закрытия */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: #e67e22;
+}
+
+
+/* ===========================
+   ФОРМА ОБРАТНОЙ СВЯЗИ
+   =========================== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Текстовые поля */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus {
+  border-color: #e67e22;
+}
+
+/* Radio и checkbox группы */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.radio-label,
+.checkbox-label {
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.radio-label input,
+.checkbox-label input {
+  accent-color: #e67e22;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Кнопки формы */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-submit {
+  flex: 1;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #d35400;
+}
+
+.btn-reset {
+  background-color: #ecf0f1;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-reset:hover {
+  background-color: #dce1e7;
+}
 
