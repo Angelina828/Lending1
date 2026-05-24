@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинг - Портфолио</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">A</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">О себе</a></li>
+          <li><a href="#experience">Опыт работы</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- Кнопка открытия формы в шапке -->
+      <button class="btn-open-form" onclick="openForm()">Написать мне</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= О СЕБЕ ======= -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <div class="about-photo">
+          <img src="images/logo1.jpg" alt="Мое фото">
+        </div>
+        <div class="about-info">
+          <h2>О себе</h2>
+          <p>Привет! Меня зовут Ангелина. Я начинающий веб-разработчик с большим интересом к созданию современных и удобных интерфейсов. В свободное время изучаю новые технологии и совершенствую навыки верстки. Ценю чистый код и внимание к деталям.</p>
+          <p>Готов к интересным проектам и сотрудничеству. Здесь вы найдете информацию о моем опыте и образовании.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= ОПЫТ РАБОТЫ ======= -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2 class="section-title">Опыт работы</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>Стажер-разработчик</h3>
+            <p class="company">ООО "Веб-Мастер"</p>
+            <p class="period">Июнь 2023 — Август 2023</p>
+            <p>Верстка лендингов и адаптивных страниц. Участие в командных проектах, исправление багов верстки.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Фриланс-верстальщик</h3>
+            <p class="company">Самозанятый</p>
+            <p class="period">Сентябрь 2023 — настоящее время</p>
+            <p>Разработка одностраничных сайтов для малого бизнеса. Настройка форм обратной связи, оптимизация скорости загрузки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= ОБРАЗОВАНИЕ ======= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <h2 class="section-title">Образование</h2>
+        <div class="education-timeline">
+
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-info">
+                <h3>Московский Государственный Технический Университет им. Н.Э. Баумана</h3>
+                <p class="faculty">Факультет "Информатика и системы управления"</p>
+                <p class="period">2021 — 2025 (бакалавриат)</p>
+                <p>Специальность: Программная инженерия</p>
+              </div>
+              <div class="education-icon-wrapper">
+                <img src="images/logo2.png" alt="МГТУ" class="education-icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-info">
+                <h3>Онлайн-курсы HTML Academy</h3>
+                <p class="period">2023</p>
+                <p>Профессиональная верстка сайтов. Адаптивная и кроссбраузерная верстка.</p>
+              </div>
+              <div class="education-icon-wrapper">
+                <img src="images/logo3.png" alt="HTML Academy" class="education-icon">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= КОНТАКТЫ ======= -->
+    <section id="contacts" class="section contacts-section">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-grid">
+          <div class="contact-details">
+            <h3>Свяжитесь со мной</h3>
+            <p><strong>Телефон:</strong> <a href="tel:+79998887766">+7 (999) 888-77-66</a></p>
+            <p><strong>Email:</strong> <a href="mailto:angelin4.panova@yandex.ru">angelin4.panova@yandex.ru</a></p>
+            <p><strong>График работы:</strong> Пн-Пт, 10:00 - 18:00</p>
+            <p><strong>Место работы:</strong> Коворкинг "Старт Хаб", Москва</p>
+            <!-- Кнопка открытия формы в секции контактов -->
+            <button class="btn-open-form btn-open-form--inline" onclick="openForm()">Отправить сообщение</button>
+          </div>
+          <div class="contact-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1da6b1f96359ffa3965a208fa2e11b0f3f13ecc0c14b341c2d648bbd3318153&amp" width="100%" height="300" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ангелина Панова.</p>
+    </div>
+  </footer>
+
+  <!-- ======= ПРЕЛОАДЕР ======= -->
+  <!-- Перекрывает всю страницу до окончания загрузки, затем скрывается через JS -->
+  <div id="preloader">
+   <img src="images/preloader.gif" alt="загрузка страницы">
+  </div>
+
+  <!-- ======= МОДАЛЬНАЯ ФОРМА ОБРАТНОЙ СВЯЗИ ======= -->
+  <!-- Скрыта по умолчанию. Показывается/скрывается кнопками через JS -->
+  <div id="modal-overlay" onclick="closeFormOnOverlay(event)">
+    <div class="modal-window">
+
+      <button class="modal-close" onclick="closeForm()">&times;</button>
+      <h2 class="modal-title">Форма обратной связи</h2>
+
+      <form method="post" class="contact-form">
+
+        <!-- Поле 1: Имя -->
+        <div class="form-group">
+          <label for="f-name">Имя *</label>
+          <input type="text" id="f-name" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <!-- Поле 2: Фамилия -->
+        <div class="form-group">
+          <label for="f-lastname">Фамилия *</label>
+          <input type="text" id="f-lastname" name="lastname" placeholder="Ваша фамилия" required>
+        </div>
+
+        <!-- Поле 3: Email -->
+        <div class="form-group">
+          <label for="f-email">Email *</label>
+          <input type="email" id="f-email" name="email" placeholder="example@mail.ru" required>
+        </div>
+
+        <!-- Поле 4: Телефон -->
+        <div class="form-group">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__">
+        </div>
+
+        <!-- Поле 5: Тема обращения -->
+        <div class="form-group">
+          <label for="f-subject">Тема обращения *</label>
+          <input type="text" id="f-subject" name="subject" placeholder="Кратко о вашем запросе" required>
+        </div>
+
+        <!-- Поле 6: Тип проекта (radio) -->
+        <div class="form-group">
+          <label>Тип проекта</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="project-type" value="landing"> Лендинг
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="project-type" value="site"> Многостраничный сайт
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="project-type" value="other"> Другое
+            </label>
+          </div>
+        </div>
+
+        <!-- Поле 7: Удобный способ связи (checkbox) -->
+        <div class="form-group">
+          <label>Удобный способ связи</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="contact-way" value="email"> Email
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="contact-way" value="phone"> Телефон
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="contact-way" value="telegram"> Telegram
+            </label>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" value="Отправить" class="btn-submit">
+          <input type="reset" value="Очистить" class="btn-reset">
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
